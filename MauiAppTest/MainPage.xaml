@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppTest.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TableView Grid.Row="0" Intent="Menu" Margin="20,0,20,0" BackgroundColor="{DynamicResource NavigationBarColor}">
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="20,0,20,0">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1" />
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Not Working Label 1"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="20,0,20,0">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1" />
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Not Working Label 2"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="20,0,20,0">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1" />
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Not Working Label 3"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="20,0,20,0">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1" />
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Not Working Label 4"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="20,0,20,0">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1" />
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Not Working Label 5"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="20,0,20,0">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1" />
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Not Working Label 6"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="20,0,20,0">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="TapGestureRecognizer_Tapped"
+                                    NumberOfTapsRequired="1" />
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Not Working Label 7"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+        <Label Grid.Row="1" Text="Working Label 1"
+            Margin="10" HorizontalOptions="CenterAndExpand">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Tapped="TapGestureRecognizer_Tapped" 
+                    NumberOfTapsRequired="1"/>
+            </Label.GestureRecognizers>
+        </Label>
+        
+        <StackLayout Grid.Row="2" Orientation="Horizontal" VerticalOptions="Center">
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer 
+                    Tapped="TapGestureRecognizer_Tapped" 
+                    NumberOfTapsRequired="1"/>
+            </StackLayout.GestureRecognizers>
+            <Label Text="Working Label 2" Margin="5"/>
+            <Label Text="Working Label 3" Margin="5"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
